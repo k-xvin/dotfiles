@@ -3,6 +3,7 @@ Apply config using `stow`. It will create a symlink to the files in the "package
 
 For example,
 ```
+cd .dotfiles
 stow amethyst
 ```
 will take whatever is in .dotfiles/amethyst and symlink it all in the parent folder of .dotfiles.
@@ -21,3 +22,6 @@ eval "$(ssh-agent -s)"
 
 pbcopy < ~/.ssh/id_ed25519.pub
 ```
+
+# Install fzf
+We need fzf 0.48.0 in order to have --zsh completions
