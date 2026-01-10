@@ -23,5 +23,11 @@ eval "$(ssh-agent -s)"
 pbcopy < ~/.ssh/id_ed25519.pub
 ```
 
-# Install fzf
-We need fzf 0.48.0 in order to have --zsh completions
+# fzf
+We need fzf 0.48.0 in order to have --zsh completions.
+
+# iTerm2
+1. Go to Settings > General > Settings.
+2. Check "Load settings from a custom folder or URL"
+3. Set to "/Users/kevin/.dotfiles/iterm2
+
