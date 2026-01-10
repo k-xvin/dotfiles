@@ -8,6 +8,17 @@ stow amethyst
 ```
 will take whatever is in .dotfiles/amethyst and symlink it all in the parent folder of .dotfiles.
 
+# VS Code
+In macOS.
+```
+stow vscode -t ~/Library/Application\ Support/Code/User
+```
+
+In Linux.
+```
+stow vscode -t ~/.config/Code/User
+```
+
 # Git
 ```
 git config --global user.name "Kevin Xu"

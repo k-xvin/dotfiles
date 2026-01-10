@@ -1,0 +1,194 @@
+{
+    // Color
+    "workbench.colorTheme": "Solarized Light",
+    // Visuals
+    "window.density.editorTabHeight": "compact",
+    "window.commandCenter": false,
+    "editor.minimap.enabled": false,
+    "editor.stickyScroll.enabled": false,
+    "editor.scrollbar.verticalScrollbarSize": 8,
+    "editor.lineNumbers": "relative",
+    "editor.glyphMargin": false,
+    "editor.inlineSuggest.enabled": false,
+    "workbench.activityBar.location": "hidden",
+    "workbench.layoutControl.enabled": false,
+    "chat.commandCenter.enabled": false,
+    // Vim Extension
+    "vim.useCtrlKeys": false,
+    // Which-key Extension
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "whichkey.show"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "whichkey.show"
+            ]
+        }
+    ],
+    "whichkey.bindings": [
+        {
+            "key": " ",
+            "name": "commands",
+            "type": "command",
+            "command": "workbench.action.showCommands"
+        },
+        {
+            "key": "f",
+            "name": "file",
+            "type": "command",
+            "command": "workbench.action.quickOpen"
+        },
+        {
+            "key": "-",
+            "name": "────────",
+            "type": "label"
+        },
+        {
+            "key": "g",
+            "name": "show git",
+            "type": "command",
+            "command": "workbench.view.scm"
+        },
+        {
+            "key": "e",
+            "name": "show explorer",
+            "type": "command",
+            "command": "workbench.view.explorer"
+        },
+        {
+            "key": "s",
+            "name": "show search",
+            "type": "command",
+            "command": "workbench.view.search"
+        },
+        {
+            "key": "x",
+            "name": "show extensions",
+            "type": "command",
+            "command": "workbench.view.extensions"
+        },
+        {
+            "key": "c",
+            "name": "show chat",
+            "type": "command",
+            "command": "workbench.action.toggleAuxiliaryBar"
+        },
+        {
+            "key": "t",
+            "name": "show terminal",
+            "type": "command",
+            "command": "workbench.action.terminal.toggleTerminal"
+        },
+        {
+            "key": "-",
+            "name": "────────",
+            "type": "label"
+        },
+        {
+            "key": "w",
+            "name": "window",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "w",
+                    "name": "tab navigation",
+                    "type": "bindings",
+                    "bindings": [
+                        {
+                            "key": "h",
+                            "name": "previous tab",
+                            "type": "command",
+                            "command": "workbench.action.previousEditorInGroup"
+                        },
+                        {
+                            "key": "l",
+                            "name": "next tab",
+                            "type": "command",
+                            "command": "workbench.action.nextEditorInGroup"
+                        }
+                    ]
+                },
+                {
+                    "key": "h",
+                    "name": "focus left pane",
+                    "type": "command",
+                    "command": "workbench.action.focusLeftGroup"
+                },
+                {
+                    "key": "j",
+                    "name": "focus below pane",
+                    "type": "command",
+                    "command": "workbench.action.focusBelowGroup"
+                },
+                {
+                    "key": "k",
+                    "name": "focus above pane",
+                    "type": "command",
+                    "command": "workbench.action.focusAboveGroup"
+                },
+                {
+                    "key": "l",
+                    "name": "focus right pane",
+                    "type": "command",
+                    "command": "workbench.action.focusRightGroup"
+                },
+                {
+                    "key": "a",
+                    "name": "hide all except editor",
+                    "type": "commands",
+                    "commands": [
+                        "workbench.action.focusActiveEditorGroup",
+                        "workbench.action.closeSidebar",
+                        "workbench.action.closePanel",
+                        "workbench.action.closeAuxiliaryBar"
+                    ]
+                },
+                {
+                    "key": "b",
+                    "name": "toggle breadcrumbs",
+                    "type": "command",
+                    "command": "breadcrumbs.toggle"
+
+                }
+            ]
+        },
+        {
+            "key": "d",
+            "name": "edit text",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "r",
+                    "name": "rename symbol",
+                    "type": "command",
+                    "command": "editor.action.rename"
+                },
+                {
+                    "key": "f",
+                    "name": "format document",
+                    "type": "command",
+                    "command": "editor.action.formatDocument"
+                },
+                {
+                    "key": "t",
+                    "name": "change tab display size",
+                    "type": "command",
+                    "command": "editor.action.changeTabDisplaySize"
+                }
+            ]
+        },
+    ],
+    // Misc
+    "breadcrumbs.enabled": false,
+}
