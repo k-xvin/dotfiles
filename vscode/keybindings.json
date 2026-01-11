@@ -4,5 +4,10 @@
         "key": "escape",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "terminalFocus || sideBarFocus || panelFocus || auxiliaryBarFocus"
+    },
+    {
+        "key": "space",
+        "command": "whichkey.show",
+        "when": "!editorTextFocus && !terminalFocus && !sideBarFocus && !panelFocus"
     }
 ]
