@@ -2,7 +2,7 @@
 [
     {
         "key": "escape",
-        "command": "whichkey.show",
+        "command": "workbench.action.focusActiveEditorGroup",
         "when": "terminalFocus || sideBarFocus || panelFocus || auxiliaryBarFocus"
     }
 ]

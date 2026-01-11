@@ -10,7 +10,7 @@
     "editor.lineNumbers": "relative",
     "editor.glyphMargin": false,
     "editor.inlineSuggest.enabled": false,
-    "workbench.activityBar.location": "hidden",
+    "workbench.activityBar.location": "top",
     "workbench.layoutControl.enabled": false,
     "chat.commandCenter.enabled": false,
     // Vim Extension
@@ -41,13 +41,15 @@
             "key": " ",
             "name": "commands",
             "type": "command",
-            "command": "workbench.action.showCommands"
+            "command": "workbench.action.showCommands",
+            "icon": "symbol-misc"
         },
         {
             "key": "f",
-            "name": "file",
+            "name": "find file",
             "type": "command",
-            "command": "workbench.action.quickOpen"
+            "command": "workbench.action.quickOpen",
+            "icon": "file"
         },
         {
             "key": "-",
@@ -58,37 +60,43 @@
             "key": "g",
             "name": "show git",
             "type": "command",
-            "command": "workbench.view.scm"
+            "command": "workbench.view.scm",
+            "icon": "source-control"
         },
         {
             "key": "e",
             "name": "show explorer",
             "type": "command",
-            "command": "workbench.view.explorer"
+            "command": "workbench.view.explorer",
+            "icon": "files"
         },
         {
             "key": "s",
             "name": "show search",
             "type": "command",
-            "command": "workbench.view.search"
+            "command": "workbench.view.search",
+            "icon": "search"
         },
         {
             "key": "x",
             "name": "show extensions",
             "type": "command",
-            "command": "workbench.view.extensions"
+            "command": "workbench.view.extensions",
+            "icon": "extensions"
         },
         {
             "key": "c",
             "name": "show chat",
             "type": "command",
-            "command": "workbench.action.toggleAuxiliaryBar"
+            "command": "workbench.action.chat.open",
+            "icon": "comment-discussion"
         },
         {
             "key": "t",
             "name": "show terminal",
             "type": "command",
-            "command": "workbench.action.terminal.toggleTerminal"
+            "command": "workbench.action.terminal.toggleTerminal",
+            "icon": "terminal"
         },
         {
             "key": "-",
@@ -99,96 +107,104 @@
             "key": "w",
             "name": "window",
             "type": "bindings",
+            "icon": "window",
             "bindings": [
                 {
-                    "key": "w",
-                    "name": "tab navigation",
-                    "type": "bindings",
-                    "bindings": [
-                        {
-                            "key": "h",
-                            "name": "previous tab",
-                            "type": "command",
-                            "command": "workbench.action.previousEditorInGroup"
-                        },
-                        {
-                            "key": "l",
-                            "name": "next tab",
-                            "type": "command",
-                            "command": "workbench.action.nextEditorInGroup"
-                        }
-                    ]
+                    "key": "h",
+                    "name": "previous tab",
+                    "type": "command",
+                    "command": "workbench.action.previousEditorInGroup",
+                    "icon": "chevron-left"
                 },
                 {
-                    "key": "h",
+                    "key": "l",
+                    "name": "next tab",
+                    "type": "command",
+                    "command": "workbench.action.nextEditorInGroup",
+                    "icon": "chevron-right"
+                },
+                {
+                    "key": "H",
                     "name": "focus left pane",
                     "type": "command",
-                    "command": "workbench.action.focusLeftGroup"
+                    "command": "workbench.action.focusLeftGroup",
+                    "icon": "arrow-left"
                 },
                 {
                     "key": "j",
                     "name": "focus below pane",
                     "type": "command",
-                    "command": "workbench.action.focusBelowGroup"
+                    "command": "workbench.action.focusBelowGroup",
+                    "icon": "arrow-down"
                 },
                 {
                     "key": "k",
                     "name": "focus above pane",
                     "type": "command",
-                    "command": "workbench.action.focusAboveGroup"
+                    "command": "workbench.action.focusAboveGroup",
+                    "icon": "arrow-up"
                 },
                 {
-                    "key": "l",
+                    "key": "L",
                     "name": "focus right pane",
                     "type": "command",
-                    "command": "workbench.action.focusRightGroup"
+                    "command": "workbench.action.focusRightGroup",
+                    "icon": "arrow-right"
                 },
                 {
                     "key": "a",
-                    "name": "hide all except editor",
+                    "name": "all hide",
                     "type": "commands",
                     "commands": [
                         "workbench.action.focusActiveEditorGroup",
                         "workbench.action.closeSidebar",
                         "workbench.action.closePanel",
                         "workbench.action.closeAuxiliaryBar"
-                    ]
+                    ],
+                    "icon": "close-all"
                 },
                 {
                     "key": "b",
                     "name": "toggle breadcrumbs",
                     "type": "command",
-                    "command": "breadcrumbs.toggle"
-
+                    "command": "breadcrumbs.toggle",
+                    "icon": "breadcrumb"
                 }
             ]
         },
         {
             "key": "d",
-            "name": "edit text",
+            "name": "document",
             "type": "bindings",
+            "icon": "edit",
             "bindings": [
                 {
                     "key": "r",
                     "name": "rename symbol",
                     "type": "command",
-                    "command": "editor.action.rename"
+                    "command": "editor.action.rename",
+                    "icon": "edit"
                 },
                 {
                     "key": "f",
                     "name": "format document",
                     "type": "command",
-                    "command": "editor.action.formatDocument"
+                    "command": "editor.action.formatDocument",
+                    "icon": "formatting"
                 },
                 {
                     "key": "t",
                     "name": "change tab display size",
                     "type": "command",
-                    "command": "editor.action.changeTabDisplaySize"
+                    "command": "editor.action.changeTabDisplaySize",
+                    "icon": "settings"
                 }
             ]
         },
     ],
     // Misc
     "breadcrumbs.enabled": false,
+    "workbench.startupEditor": "none",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "files.trimTrailingWhitespace": true,
 }
