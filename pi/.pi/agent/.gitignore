@@ -1,0 +1,25 @@
+# Credentials and machine-local provider configuration
+/auth.json
+/trust.json
+/models.json
+/models-store.json
+/models.json.bak*
+
+# Runtime state and downloaded resources
+/sessions/
+/subagent-sessions/
+/jobs/
+/run-limits/
+/agent-memory/
+/bin/
+/npm/
+/git/
+/skills/synced/
+
+# Local artifacts
+node_modules/
+__pycache__/
+*.pyc
+*.bak*
+.env
+.env.*

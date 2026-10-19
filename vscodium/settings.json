@@ -1,0 +1,83 @@
+{
+    // Minimal classic-editor profile. Keep this file free of agent/chat state;
+    // language support is supplied by explicit extensions.
+    "telemetry.telemetryLevel": "off",
+    "chat.disableAIFeatures": true,
+    "workbench.settings.showAISearchToggle": false,
+    "window.commandCenter": false,
+    "editor.minimap.enabled": false,
+    "editor.stickyScroll.enabled": false,
+    "editor.scrollbar.verticalScrollbarSize": 8,
+    "editor.lineNumbers": "relative",
+    "editor.glyphMargin": false,
+    "editor.inlineSuggest.enabled": false,
+    "workbench.activityBar.location": "top",
+    "workbench.layoutControl.enabled": false,
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "Solarized Light",
+    "window.autoDetectColorScheme": false,
+    "window.density.editorTabHeight": "compact",
+    "workbench.editor.tabSizingFixedMaxWidth": 200,
+    "workbench.editor.pinnedTabsOnSeparateRow": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "files.trimTrailingWhitespace": true,
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.rightClickBehavior": "paste",
+
+    "vim.useCtrlKeys": false,
+
+    // Preserve completions while avoiding whole-workspace Python diagnostics in
+    // very large multi-root workspaces.
+    "python.analysis.diagnosticMode": "openFilesOnly",
+
+    // Let the extensions discover or provision their tools instead of carrying
+    // machine-specific paths into this portable configuration.
+    "clangd.arguments": [
+        "-header-insertion=never"
+    ],
+
+    // Skip generated and dependency trees to keep large workspaces responsive.
+    "files.watcherExclude": {
+        "**/.git/**": true,
+        "**/node_modules/**": true,
+        "**/out/**": true,
+        "**/third_party/**": true,
+        "**/.cache/**": true,
+        "**/bazel-*/**": true,
+        "**/.bazel_output_base/**": true,
+        "**/.gradle/**": true,
+        "**/build/**": true,
+        "**/bazel/**": true,
+        "**/bazel_output/**": true,
+        "**/target/**": true,
+        "**/dist/**": true
+    },
+    "search.exclude": {
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/out": true,
+        "**/third_party": true,
+        "**/.cache": true,
+        "**/bazel-*": true,
+        "**/.bazel_output_base": true,
+        "**/.gradle": true,
+        "**/build": true,
+        "**/bazel": true,
+        "**/bazel_output": true,
+        "**/target": true,
+        "**/dist": true
+    },
+
+    // Avoid expensive repository discovery through nested monorepo trees.
+    "git.blame.editorDecoration.forceDisabled": true,
+    "scm.repositories.visible": 0,
+    "scm.alwaysShowRepositories": true,
+    "git.openRepositoryInParentFolders": "always",
+    "git.autoRepositoryDetection": true,
+    "git.repositoryScanIgnoredFolders": [
+        "node_modules",
+        "out"
+    ],
+    "git.repositoryScanMaxDepth": 2,
+    "breadcrumbs.enabled": false
+}

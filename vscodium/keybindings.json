@@ -1,0 +1,17 @@
+// Classic editor bindings; agent-specific shortcuts are omitted.
+[
+    {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quit"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "extension.vim_ctrl+v",
+        "when": "editorTextFocus && vim.active"
+    },
+    {
+        "key": "ctrl+escape",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "terminalFocus || sideBarFocus || panelFocus || auxiliaryBarFocus"
+    }
+]
