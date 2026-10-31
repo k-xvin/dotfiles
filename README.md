@@ -37,6 +37,14 @@ Back up conflicting files in `~/.pi/agent` before linking, then restart Pi or
 state, and project configuration local. `settings.json` tracks UI preferences;
 saving model defaults into it changes this repo.
 
+# Claude Code skills
+`claude/` links the portable pi skills into `~/.claude/skills`; the source stays in `pi/.pi/agent/skills`.
+`long-task-protocol` and `herdr` are pi/herdr specific and are not shared.
+
+```
+stow claude
+```
+
 # Herdr
 ```
 stow herdr

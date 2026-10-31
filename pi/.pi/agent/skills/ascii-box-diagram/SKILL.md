@@ -59,7 +59,7 @@ deliberate aesthetic tweaks, not to make things line up.
 1. Translate the diagram into the JSON schema below (see Schema).
 2. Write it to a temp file and run:
    ```
-   python3 ~/.pi/agent/skills/ascii-box-diagram/scripts/render.py spec.json
+   python3 <this-skill-dir>/scripts/render.py spec.json
    ```
    (or pipe JSON via stdin).
 3. Paste the script's stdout verbatim into the target file/comment.

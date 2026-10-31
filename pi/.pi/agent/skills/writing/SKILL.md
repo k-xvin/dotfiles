@@ -13,7 +13,7 @@ description: >
 
 Follow the requested mode: write, edit, or review. Produce requested text rather than
 substituting a review; leave review feedback rather than rewriting without permission.
-Follow `~/.pi/agent/AGENTS.md` for prose conventions.
+Follow the global agent instructions (`AGENTS.md` or `CLAUDE.md`) for prose conventions.
 
 ## Source fidelity
 
